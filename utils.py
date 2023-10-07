@@ -5,6 +5,7 @@ import streamlit as st
 openai.api_key = "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"
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
+
 pinecone.init(api_key="ea0672a4-cacb-4256-ad83-1ff4f0395cb8", environment="gcp-starter")
 index = pinecone.Index('langchain-chatbot')
 
